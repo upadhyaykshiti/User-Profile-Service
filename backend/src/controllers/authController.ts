@@ -41,7 +41,12 @@ export async function login(req: Request, res: Response) {
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 
-  return res.json({ message: "Logged in" });
+  // return res.json({ message: "Logged in" });
+  return res.json({
+    message: "Logged in successfully",
+    token,
+    user: { id: user.id, email: user.email },
+  });
 }
 
 export async function logout(req: Request, res: Response) {
