@@ -45,3 +45,7 @@ This archive contains a full-stack starter project (backend + frontend) using yo
    ```
 3. Open `http://localhost:3000` and ensure the backend is at `http://localhost:4000`.
 
+4. Run Tests:
+   ```bash
+   npm test
+   ```
